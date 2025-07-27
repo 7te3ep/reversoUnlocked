@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverso Unlocked</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 30px;
+            height: 50vh;
+            margin: 20px 0px;
+            white-space: pre-wrap;
+        }
+
+        button {
+            padding: 5px;
+            font-size: large;
+            margin-bottom: 20px;
+        }
+
+        p {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reverso Unlocked</h1>
+    <strong>Correct text above 300 characters</strong>
+    <textarea type="text" id="input" placeholder="Your text here"></textarea>
+    <button id="submit">Correct Spelling</button>
+    <br>
+    <p id="output"></p>
+</body>
+<script type="module" src="app.js"></script>
+
+</html>
