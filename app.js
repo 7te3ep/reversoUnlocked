@@ -77,3 +77,16 @@ btn.addEventListener("click", async (e) => {
     }
     document.getElementById("output").innerText = output
 });
+
+document.getElementById("copy").addEventListener('click',()=>{
+    var aux = document.createElement("input");
+    aux.setAttribute("value", document.getElementById("output").innerText);
+    document.body.appendChild(aux);
+
+  aux.select();
+  aux.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(aux.value);
+document.body.removeChild(aux);
+})
+
